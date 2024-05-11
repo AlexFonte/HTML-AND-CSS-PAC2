@@ -1,0 +1,161 @@
+/******* Colors i tipografia del tema
+ *******/
+:root {
+    --text-color: #081226;
+    --text-color-background-dark: #F2F2F2;
+    --contrast-color: #FFD920;
+    --footer-color: #1B2459 --light-color: rgb(255, 255, 255);
+    --bg-dark: rgb(0, 0, 0);
+    --sans-serif: "Fira Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    /* Debe ser igual a la altura del footer */
+    font-family: var(--sans-serif);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.body-home {
+    background-image: url(../img/bg-home.jpg);
+    color: var(--text-color-background-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-home {
+    font-size: 2rem;
+    margin-right: 39.3rem;
+    margin-top: 1.6rem;
+    text-align: right;
+}
+
+.nav-home ul,
+.footer-home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-home li,
+.footer-home li {
+    color: var(--text-color-background-dark);
+    padding: 0 1.5rem;
+    display: inline-block;
+}
+
+.nav-home a,
+.footer-home a {
+    color: var(--text-color-background-dark);
+    text-decoration: none;
+}
+
+.container-home {
+    text-align: left;
+    width: 95%;
+    max-width: 112.5rem;
+    width: 112.5rem;
+    margin: 12.75rem auto 4.8rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box-home1,
+.box-home2 {
+    display: inline-block;
+
+}
+
+.box-home1 {
+    /* flex: 3; */
+    width: 70%;
+}
+
+.box-home1 h1 {
+    font-size: 14.70rem;
+    line-height: 1;
+}
+
+.box-home2 {
+    /* flex: 1; */
+    width: 30%;
+    text-align: right;
+
+}
+
+.box-home2 img {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+}
+
+.container-home p {
+    font-size: 3.75rem;
+}
+
+.footer-home {
+    text-align: left;
+    font-size: 1.4rem;
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+}
+
+.footer-home div {
+    margin: 15rem 0 0 40rem;
+}
+
+/* FONTS */
+.fira-sans-extralight {
+    font-family: var(--sans-serif);
+    font-weight: 200;
+    font-style: normal;
+}
+
+.fira-sans-regular {
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fira-sans-bold {
+    font-family: var(--sans-serif);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fira-sans-regular-italic {
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fira-sans-bold-italic {
+    font-family: var(--sans-serif);
+    font-weight: 700;
+    font-style: italic;
+}
+
+/******* Regles per als elements 
+de les pàgines *******/
