@@ -4,8 +4,7 @@
     --text-color: #081226;
     --text-color-background-dark: #F2F2F2;
     --contrast-color: #FFD920;
-    --footer-color: #1B2459 --light-color: rgb(255, 255, 255);
-    --bg-dark: rgb(0, 0, 0);
+    --footer-color: #1B2459;
     --sans-serif: "Fira Sans", sans-serif;
 }
 
@@ -21,10 +20,43 @@ html {
     font-size: 10px;
 }
 
+/* FONTS */
+.fira-sans-extralight {
+    font-family: var(--sans-serif);
+    font-weight: 200;
+    font-style: normal;
+}
+
+.fira-sans-regular {
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fira-sans-bold {
+    font-family: var(--sans-serif);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fira-sans-regular-italic {
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fira-sans-bold-italic {
+    font-family: var(--sans-serif);
+    font-weight: 700;
+    font-style: italic;
+}
+/* END FONTS*/
 body {
     position: relative;
     margin: 0;
+    min-height: 50vh;
     /* Debe ser igual a la altura del footer */
+    padding-bottom: 11.2rem;
     font-family: var(--sans-serif);
     color: var(--text-color);
     text-align: center;
@@ -50,22 +82,30 @@ body {
     text-align: right;
 }
 
-.nav-home ul{
+.nav-home ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav-home li {
+nav li {
     color: var(--text-color-background-dark);
-    padding: 0 1.5rem;
     display: inline-block;
+    padding: 0 1.5rem;
 }
 
-.nav-home a,
-.footer-home a {
+nav li:first-child{
+    padding-left: 0;
+}
+
+nav a,
+footer a {
     color: var(--text-color-background-dark);
     text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--contrast-color);
 }
 
 .container-home {
@@ -112,10 +152,52 @@ body {
     font-size: 3.75rem;
 }
 
+.header {
+    background-color: var(--footer-color);
+    color: var(--text-color-background-dark);
+    width: 100%;
+    text-align: left;
+    padding-bottom: 3rem;
+}
+
+.active{
+    color: var(--text-color-background-dark);
+    border-bottom: 3px solid #FFD920;
+}
+
+.menu{
+    font-size: 1.9rem;
+}
+
+.header header,
+nav.menu {
+    margin-left: 36rem;
+}
+
+.footer-main {
+    position: absolute;
+    bottom: 0;
+    height: 11.2rem;
+    /* Define la altura del footer */
+    background-color: var(--footer-color);
+    color: var(--text-color-background-dark);
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.footer-main div {
+    margin: 1rem 0 0 36.25rem;
+}
+
+footer li {
+    display: inline-block;
+}
+
 .footer-home {
+    position: absolute;
     text-align: left;
     font-size: 1.3rem;
-    position: absolute;
     height: 10rem;
     width: 100%;
     line-height: 2;
@@ -125,7 +207,7 @@ body {
     margin: 15.0rem 0 0 40rem;
 }
 
-.footer-home ul{
+footer ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -134,54 +216,45 @@ body {
 .footer-home li {
     color: var(--text-color-background-dark);
     padding-right: 0.45rem;
-    display: inline-block;
 }
 
 .footer-home li a {
     padding-right: 0.45rem;
 }
 
-.footer-home li::after{
-    content: " ·";
+footer li::after {
+    content: " · ";
 }
-.footer-home li:last-child::after{
+
+footer li:last-child::after {
     content: "";
 }
 
-.footer-home p:last-child{
+.footer-home p:last-child {
     font-size: 1.4rem;
     margin-top: 1rem;
 }
-/* FONTS */
-.fira-sans-extralight {
-    font-family: var(--sans-serif);
-    font-weight: 200;
-    font-style: normal;
+
+h1 {
+    font-size: 5rem;
 }
 
-.fira-sans-regular {
-    font-family: var(--sans-serif);
-    font-weight: 400;
-    font-style: normal;
+h1 a {
+    color: var(--text-color-background-dark);
+    text-decoration: none;
 }
 
-.fira-sans-bold {
-    font-family: var(--sans-serif);
-    font-weight: 700;
-    font-style: normal;
+
+.container-main {
+    text-align: center;
+    width: 95%;
+    max-width: 120rem;
+    margin: 3rem auto 4.8rem auto;
 }
 
-.fira-sans-regular-italic {
-    font-family: var(--sans-serif);
-    font-weight: 400;
-    font-style: italic;
+.container-main h2{
+    font-size: 3.42rem;
+    text-align: left;
 }
-
-.fira-sans-bold-italic {
-    font-family: var(--sans-serif);
-    font-weight: 700;
-    font-style: italic;
-}
-
 /******* Regles per als elements 
 de les pàgines *******/
