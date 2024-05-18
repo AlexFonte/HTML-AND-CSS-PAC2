@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/estils.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <title>Pac 2</title>
 </head>
 
 <body class="body-main">
-    
 
-        <div class="header">
-            <header class="">
+
+    <div class="header">
+        <div class="wrapper">
+            <header>
                 <h1><a href="index.html">RUTA<span class="fira-sans-extralight"> PERFECTA</span></a></h1>
             </header>
             <nav class="menu">
@@ -27,24 +29,109 @@
                 </ul>
             </nav>
         </div>
-
-        <main class="container-main">
-            <h2>Destinacions perfectes 2024</h2>
-        </main>
-
-        <footer class="footer-main">
-            <div>
-                <p>2024 &copy; Alex Ramos da Fonte</p>
-                
-                <ul>
-                    <li><a href="">Avís legal</a></li>
-                    <li><a href="">Política de privacitat</a></li>
-                    <li><a href="">Política de <i>cookies</i></a></li>
-                </ul>
-                
-            </div>
-        </footer>
     </div>
+
+    <main class="">
+        <div class="wrapper">
+            <article>
+                <h2>Destinacions perfectes <span class="yellow-background">2024</span></h2>
+
+                <h3 class="title-table fira-sans-regular">Tria la teva destinació i contacta amb nosaltres per a <a href="informacio.html">més informació</a></h3>
+
+                <table >
+                    <caption>Programació 2024</caption>
+                    <colgroup>
+                        <col/>
+                        <col />
+                        <col />
+                        <col  />
+                      </colgroup>
+                    <thead>
+                       <!--  <tr>
+                            <th colspan="4" scope="colgroup" id="programacio">Programació 2024</th>
+                        </tr> -->
+                        <tr class="table-head">
+                            <th class="fira-sans-regular" headers="programacio" id="ruta" scope="col">Ruta</th>
+                            <th class="fira-sans-regular" headers="programacio" id="destinacio" scope="col">Destinació</th>
+                            <th class="fira-sans-regular" headers="programacio" id="durada" scope="col">Durada</th>
+                            <th class="fira-sans-regular" headers="programacio" id="activitats" scope="col">Activitats</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td headers="ruta" class="place">Aventura a la natura</td>
+                            <td headers="destinacio">Costa Rica</td>
+                            <td headers="durada">10 dies</td>
+                            <td headers="activitats">
+                                <ul>
+                                    <li>Excursió pel Parc Nacional Manuel Antonio per a albirament de vida silvestre.</li>
+                                    <li>Visita a la Reserva Biològica Tirimbina per bservar aus exòtiques i fer senderisme.</li>
+                                    <li><i>Rafting</i> a les aigües braves del riu Pacuare.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td headers="ruta" class="place">Ruta del vi i la gastronomia</td>
+                            <td headers="destinacio">Vall de Napa, Califòrnia</td>
+                            <td headers="durada">5 dies</td>
+                            <td headers="activitats">
+                                <ul>
+                                    <li>Recorregut per cellers de vi amb tasts en algunes de les millors vinyes de la regió.</li>
+                                    <li>Classe de cuina <i>gourmet</i> amb un xef local.</li>
+                                    <li>Visita al mercat de pagesos de Napa per comprar productes frescos.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td headers="ruta" class="place">Cultura i aventura a Àsia</td>
+                            <td headers="destinacio">Tailàndia i Cambodja</td>
+                            <td headers="durada">14 dies</td>
+                            <td headers="activitats">
+                                <ul>
+                                    <li>Visita als temples de Bangkok, incloent-hi el Gran Palau i el Temple del Buda Esmeralda.</li>
+                                    <li>Excursió a la selva de Tailàndia per fer senderisme i conèixer el santuari ètic d'elefants rescatats.</li>
+                                    <li>Exploració dels temples antics d'Ankor Wat a Cambodja.</li>
+                                    <li>Passeig amb vaixell pel riu Mekong per visitar els llogarets flotants.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td headers="ruta" class="place">Escapada romàntica per Europa</td>
+                            <td headers="destinacio">París i Venècia</td>
+                            <td headers="durada">7 dies</td>
+                            <td headers="activitats">
+                                <ul>
+                                    <li>Creuer pel riu Sena al capvespre a París.</li>
+                                    <li>Sopar en un restaurant amb vistes a la torre Eiffel.</li>
+                                    <li>Passeig amb góndola pels canals de Venècia.</li>
+                                    <li>Visita privada a la Basílica de Sant Marc i al Palau Ducal.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" scope="colgroup">Tots els paquets inclouen allotjament, transport i guies locals</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer-main">
+        <div class="wrapper">
+            <p>2024 &copy; Alex Ramos da Fonte</p>
+            <ul>
+                <li><a href="">Avís legal</a></li>
+                <li><a href="">Política de privacitat</a></li>
+                <li><a href="">Política de <i>cookies</i></a></li>
+            </ul>
+
+        </div>
+    </footer>
 </body>
 
 </html>

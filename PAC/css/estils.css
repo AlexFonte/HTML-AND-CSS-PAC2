@@ -143,17 +143,17 @@ body {
 
 .wrapper {
     width: 94%;
-    max-width: 120rem;
+    max-width: 103rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.container {
+/* .container {
     width: 94%;
     max-width: 100rem;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 footer li {
     display: inline-block;
@@ -298,22 +298,24 @@ figcaption {
 }
 
 figcaption a,
-.box-little a {
+.box-little a,
+.title-table a {
     color: var(--text-color);
     text-decoration: none;
     border-bottom: 1px dotted var(--text-color);
 }
 
 figcaption a:hover,
-.box-little a:hover {
+.box-little a:hover,
+.title-table a:hover {
     color: var(--text-color);
     text-decoration: none;
     border-bottom: 1px solid var(--text-color);
 }
 
 .box p {
-    font-size: 1.85rem;
-    width: 68%;
+    font-size: 1.6rem;
+    width: 68.5%;
     margin: 0 auto;
 
 }
@@ -323,5 +325,84 @@ figcaption a:hover,
 }
 
 .box-little p {
-    font-size: 1.85rem;
+    font-size: 1.6rem;
+}
+
+.yellow-background {
+    background-color: var(--contrast-color);
+    padding: 0.5rem 1.5rem;
+}
+
+.title-table{
+    background-color: var(--text-color-background-dark);
+    padding: 1rem 0;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+    font-size: 1.6rem;
+}
+
+caption {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.table-head {
+    background-color: var(--text-color-background-dark);
+    font-size: 1.4rem;
+}
+
+tbody {
+    vertical-align: baseline;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+thead th:nth-child(1) {
+    width: 24%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 6%;
+}
+
+thead th:nth-child(4) {
+    width: 50%;
+}
+
+.place{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+table ul{
+    list-style-type: square;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+}
+
+table li{
+    padding-bottom: 1.5rem;
+}
+
+tfoot {
+    font-size: 1.3rem;
 }
