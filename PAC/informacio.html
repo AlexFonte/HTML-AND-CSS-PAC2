@@ -14,7 +14,7 @@
 </head>
 
 <body class="body-main">
-    
+
     <div class="header">
         <div class="wrapper">
             <header>
@@ -34,6 +34,90 @@
         <div class="wrapper">
             <article>
                 <h2>Formulari de preferències de viatge</h2>
+
+                <form method="post" action="">
+                    <section>
+                        <fieldset>
+                            <legend>Informació personal</legend>
+                            <ul>
+                                <li>
+                                    <label for="name">Nom <abbr title="required" aria-label="required">*</abbr></label>
+                                    <input type="text" id="name" name="name"/>
+                                </li>
+                                <li>
+                                    <label for="surname">Cognoms <abbr title="required" aria-label="required">*</abbr></label>
+                                    <input type="text" id="surname" name="surname"/>
+                                </li>
+                                <li>
+                                    <label for="email">Correu electrònic <abbr title="required" aria-label="required">*</abbr></label>
+                                    <input type="email" id="email" name="email"/>
+                                </li>
+                                <li>
+                                    <label for="phone">Telèfon</label>
+                                    <input type="text" id="phone" name="phone"/>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </section>
+
+                    <section>
+                        <fieldset>
+                            <legend>Viatge</legend>
+                            <ul>
+                                <li>
+                                    <label for="destination">Destinació desitjada <abbr title="required" aria-label="required">*</abbr></label>
+                                    <select id="destination" name="destination">
+                                        <option value="">Tria una opció</option>
+                                        <option value="Aventura a la natura">Aventura a la natura</option>
+                                        <option value="Ruta del vi i la gastronomia">Ruta del vi i la gastronomia</option>
+                                        <option value="Ruta del vi i la gastronomia">Ruta del vi i la gastronomia</option>
+                                        <option value="Escapada romàntica per Europa">Escapada romàntica per Europa</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="date">Data d’inici del viatge <abbr title="required" aria-label="required">*</abbr></label>
+                                    <input type="date" id="date" name="date"/>
+                                </li>
+                                <li>
+                                    <label for="sleep">Tipus d’allotjament <abbr title="required" aria-label="required">*</abbr></label>
+                                    <select id="sleep" name="sleep">
+                                        <option value="">Tria una opció</option>
+                                        <option value="Hotel">Hotel</option>
+                                        <option value="Hostal">Hostal</option>
+                                        <option value="Apartament de vacances">Apartament de vacances</option>
+                                        <option value="Alberg">Alberg</option>
+                                        <option value="Sense preferència específica">Sense preferència específica</option>
+                                    </select>
+                                </li>   
+                                <li>
+                                    <label for="transport">Tipus de transport a destinació <abbr title="required" aria-label="required">*</abbr></label>
+                                    <select id="transport" name="transport">
+                                        <option value="">Tria una opció</option>
+                                        <option value="Transport públic">Transport públic</option>
+                                        <option value="Lloguer de cotxe">Lloguer de cotxe</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </section>
+
+                    <section>
+                        <fieldset>
+                            <legend>Mètode de pagament <abbr title="required" aria-label="required">*</abbr></legend>
+                            
+                               <p>
+                                <input type="radio" id="paypal" name="paypal" value="paypal" /><label for="paypal"> Paypal</label>
+                               </p>
+                                <p>
+                                    <input type="radio" id="creditCard" name="creditCard" value="Targeta de crèdit" /><label for="creditCard">Targeta de crèdit</label>
+                                </p>
+                                <p>
+                                    <input type="radio" id="transferBanc" name="transferBanc" value="Transferència bancària" /><label for="transferBanc"> Transferència bancària</label>
+                                </p>   
+                        </fieldset>
+                    </section>
+
+                </form>
             </article>
         </div>
     </main>
