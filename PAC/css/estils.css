@@ -6,8 +6,8 @@
     --text-color-background-dark: #F2F2F2;
     --contrast-color: #FFD920;
     --footer-color: #1B2459;
-    --required : #FF0000;
-    --input-valid : #4CAF50;
+    --required: #FF0000;
+    --input-valid: #4CAF50;
     --input-background: #FFFFFF;
 }
 
@@ -302,7 +302,8 @@ figcaption {
 
 figcaption a,
 .box-little a,
-.title-table a {
+.title-table a,
+fieldset a {
     color: var(--text-color);
     text-decoration: none;
     border-bottom: 1px dotted var(--text-color);
@@ -310,7 +311,8 @@ figcaption a,
 
 figcaption a:hover,
 .box-little a:hover,
-.title-table a:hover {
+.title-table a:hover,
+fieldset a:hover {
     color: var(--text-color);
     text-decoration: none;
     border-bottom: 1px solid var(--text-color);
@@ -420,22 +422,20 @@ form {
 form fieldset {
     background-color: var(--text-color-background-dark);
     border: 0;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-bottom: 5rem;
     border-radius: 0.5rem;
     margin-bottom: 4rem;
 }
 
-form fieldset legend{
+
+form fieldset legend {
     font-weight: bold;
     font-size: 1.8rem;
 }
 
-form ul{
-    list-style-type: none;
-}
-
 form ul {
+    list-style-type: none;
     padding: 1rem 0;
     display: flex;
     flex-wrap: wrap;
@@ -447,12 +447,10 @@ form ul li {
     width: 48%;
 }
 
-/* .payment-list label{
-    text-align: right;
-    width: 100%;
-} */
 
-form input, select{
+form input:not(.other-input),
+form select,
+form textarea {
     width: 100%;
     background-color: var(--input-background);
     padding: 0.8rem;
@@ -461,7 +459,7 @@ form input, select{
     border-radius: 0.5rem;
 }
 
-li label{
+li label {
     display: block;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -471,4 +469,57 @@ label abbr,
 legend abbr {
     text-decoration: none;
     color: var(--required);
+}
+
+section:last-child fieldset,
+.type-payment {
+    padding-bottom: 3rem;
+}
+
+.type-payment ul {
+    padding-top: 2rem;
+}
+
+.type-payment li,
+.other-info li,
+section:last-child fieldset li {
+    width: 100%;
+
+}
+
+.type-payment label,
+section:last-child fieldset label {
+    text-align: left;
+    display: inline;
+    margin-left: 1rem;
+}
+
+.type-payment label,
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+fieldset.other-info {
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+section:last-child fieldset {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 7rem;
+}
+
+fieldset p {
+    font-size: 1.125rem;
+}
+
+button {
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--contrast-color);
+    padding: 1.5rem 2.5rem;
+    margin-top: 1rem;
 }

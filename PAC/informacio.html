@@ -102,18 +102,53 @@
                     </section>
 
                     <section>
-                        <fieldset>
+                        <fieldset class="type-payment">
                             <legend>Mètode de pagament <abbr title="required" aria-label="required">*</abbr></legend>
-                            
-                               <p>
-                                <input type="radio" id="paypal" name="paypal" value="paypal" /><label for="paypal"> Paypal</label>
-                               </p>
-                                <p>
-                                    <input type="radio" id="creditCard" name="creditCard" value="Targeta de crèdit" /><label for="creditCard">Targeta de crèdit</label>
+                            <ul>
+                               <li>
+                                    <input type="radio" id="paypal" name="payment" value="paypal" class="other-input"/><label for="paypal">Paypal</label>
+                               </li>
+                                <li>
+                                    <input type="radio" id="creditCard" name="payment" value="Targeta de crèdit" class="other-input"/><label for="creditCard">Targeta de crèdit</label>
                                 </p>
-                                <p>
-                                    <input type="radio" id="transferBanc" name="transferBanc" value="Transferència bancària" /><label for="transferBanc"> Transferència bancària</label>
-                                </p>   
+                                <li>
+                                    <input type="radio" id="transferBanc" name="payment" value="Transferència bancària" class="other-input"/><label for="transferBanc">Transferència bancària</label>
+                                </li>  
+                            </ul> 
+                        </fieldset>
+                    </section>
+
+                    <section>
+                        <fieldset class="other-info">
+                            <legend>Altres informacions</legend>
+                            <ul>
+                                <li>
+                                    <label for="observations">Comentaris o peticions especials</label>
+                                    <textarea id="observations" name="observations" rows="9" cols="99"></textarea>
+                                </li>
+                            </ul> 
+                        </fieldset>
+                    </section>
+
+                    <section>
+                        <fieldset>
+                            <ul>
+                                <li>
+                                    <p>INFORMACIÓ SOBRE PROTECCIÓ DE DADES DE <strong>RUTA PERFECTA</strong>. <strong>Finalitats</strong>: 
+                                        recollida de dades per a la sol·licitud d’informació. <strong>Legitimació</strong>: consentiment de 
+                                        l’interessat. <strong>Destinataris</strong>: no estan previstes cessions de dades a tercers, excepte per 
+                                        obligació legal. <strong>Drets</strong>: podeu retirar el vostre consentiment en qualsevol moment, així 
+                                        com accedir, rectificar, suprimir les vostres dades i altres drets dirigint-vos a 
+                                        <a href="">info@rutaperfecta.com</a>. <strong>Informació addicional</strong>: podeu ampliar la informació a l'enllaç 
+                                        d'<a href="">Avís Legal</a> i <a href="">Política de privacitat</a>.
+                                        </p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="reamde" name="readme" value="" class="other-input"/>
+                                    <label for="readme">He llegit i accepto la <a href="">política de privacitat</a> <abbr title="required" aria-label="required">*</abbr></label>
+                                </li>
+                                <li><button type="submit" class="other-input">ENVIA</button></li>
+                            </ul> 
                         </fieldset>
                     </section>
 
