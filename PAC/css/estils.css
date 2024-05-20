@@ -77,11 +77,9 @@ body {
     padding: 0;
 }
 
-
 .body-main {
     padding-bottom: 10rem;
 }
-
 
 .header,
 .footer-main {
@@ -150,13 +148,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* .container {
-    width: 94%;
-    max-width: 100rem;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 footer li {
     display: inline-block;
@@ -228,7 +219,6 @@ footer a {
 }
 
 .box-home1 {
-    /* flex: 3; */
     width: 70%;
 }
 
@@ -238,10 +228,8 @@ footer a {
 }
 
 .box-home2 {
-    /* flex: 1; */
     width: 30%;
     text-align: right;
-
 }
 
 .box-home2 img {
@@ -412,6 +400,10 @@ tfoot {
     font-size: 1.3rem;
 }
 
+tfoot th {
+    font-weight: normal;
+}
+
 form {
     margin: 5rem auto 0 auto;
     font-size: 1.6rem;
@@ -425,11 +417,11 @@ form fieldset {
     padding-left: 2rem;
     padding-bottom: 5rem;
     border-radius: 0.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 
-form fieldset legend {
+form fieldset legend h3 {
     font-weight: bold;
     font-size: 1.8rem;
 }
@@ -455,7 +447,6 @@ form textarea {
     background-color: var(--input-background);
     padding: 0.8rem;
     border: 1px solid black;
-    /* font-size: 1.6rem; */
     border-radius: 0.5rem;
 }
 
@@ -466,12 +457,12 @@ li label {
 }
 
 label abbr,
-legend abbr {
+legend h3 abbr {
     text-decoration: none;
     color: var(--required);
 }
 
-section:last-child fieldset,
+div > fieldset,
 .type-payment {
     padding-bottom: 3rem;
 }
@@ -482,13 +473,13 @@ section:last-child fieldset,
 
 .type-payment li,
 .other-info li,
-section:last-child fieldset li {
+div > fieldset li {
     width: 100%;
 
 }
 
 .type-payment label,
-section:last-child fieldset label {
+div > fieldset label {
     text-align: left;
     display: inline;
     margin-left: 1rem;
@@ -505,7 +496,7 @@ fieldset.other-info {
     margin-bottom: 2rem;
 }
 
-section:last-child fieldset {
+div > fieldset {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 7rem;
@@ -530,9 +521,6 @@ button:hover {
     cursor: pointer;
 }
 
-/* input[type="text"]:user-invalid,
-input[type="email"]:user-invalid,
-input[type="date"]:user-invalid, */
 input[required]:user-invalid,
 select[required]:user-invalid {
     border: 1px solid var(--required);
@@ -547,7 +535,6 @@ form input[type="radio"]:user-invalid,
 form input[type="checkbox"]:user-invalid {
     box-shadow: 0 0 0 1px var(--required);
 }
-
 
 form input[type="radio"]:checked:user-valid,
 form input[type="checkbox"]:checked:user-valid {

@@ -35,26 +35,28 @@
             <article>
                 <h2>Formulari de preferències de viatge</h2>
 
-                <form method="post" action="">
+                <form method="post" action="#">
                     <section>
                         <fieldset>
-                            <legend>Informació personal</legend>
+                            <legend><h3>Informació personal</h3></legend>
                             <ul>
                                 <li>
-                                    <label for="name">Nom <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="text" id="name" name="name" required minlength="3" maxlength="64" pattern="^[\p{L}\s]{3,64}$" title="Introdueix un nom valid."/>
+                                    <label for="name">Nom <abbr title="Camp obligatori">*</abbr></label>
+                                    <input type="text" id="name" name="name" required minlength="3" maxlength="64"
+                                        pattern="^[\p{L}\s]{3,64}$" title="Introdueix un nom valid.">
                                 </li>
                                 <li>
-                                    <label for="surname">Cognoms <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="text" id="surname" name="surname" required minlength="3" maxlength="128" pattern="^[\p{L}\s]{3,128}$"/>
+                                    <label for="surname">Cognoms <abbr title="Camp obligatori">*</abbr></label>
+                                    <input type="text" id="surname" name="surname" required minlength="3"
+                                        maxlength="128" pattern="^[\p{L}\s]{3,128}$">
                                 </li>
                                 <li>
-                                    <label for="email">Correu electrònic <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="email" id="email" name="email" required/>
+                                    <label for="email">Correu electrònic <abbr title="Camp obligatori">*</abbr></label>
+                                    <input type="email" id="email" name="email" required>
                                 </li>
                                 <li>
                                     <label for="phone">Telèfon</label>
-                                    <input type="text" id="phone" name="phone"/>
+                                    <input type="text" id="phone" name="phone">
                                 </li>
                             </ul>
                         </fieldset>
@@ -62,35 +64,43 @@
 
                     <section>
                         <fieldset>
-                            <legend>Viatge</legend>
+                            <legend><h3>Viatge</h3></legend>
                             <ul>
                                 <li>
-                                    <label for="destination">Destinació desitjada <abbr title="required" aria-label="required">*</abbr></label>
+                                    <label for="destination">Destinació desitjada <abbr
+                                            title="Camp obligatori">*</abbr></label>
                                     <select id="destination" name="destination" required>
                                         <option value="">Tria una opció</option>
                                         <option value="Aventura a la natura">Aventura a la natura</option>
-                                        <option value="Ruta del vi i la gastronomia">Ruta del vi i la gastronomia</option>
-                                        <option value="Ruta del vi i la gastronomia">Ruta del vi i la gastronomia</option>
-                                        <option value="Escapada romàntica per Europa">Escapada romàntica per Europa</option>
+                                        <option value="Ruta del vi i la gastronomia">Ruta del vi i la gastronomia
+                                        </option>
+                                        <option value="Ruta del vi i la gastronomia">Ruta del vi i la gastronomia
+                                        </option>
+                                        <option value="Escapada romàntica per Europa">Escapada romàntica per Europa
+                                        </option>
                                     </select>
                                 </li>
                                 <li>
-                                    <label for="date">Data d’inici del viatge <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="date" id="date" name="date" required/>
+                                    <label for="date">Data d’inici del viatge <abbr
+                                            title="Camp obligatori">*</abbr></label>
+                                    <input type="date" id="date" name="date" required>
                                 </li>
                                 <li>
-                                    <label for="sleep">Tipus d’allotjament <abbr title="required" aria-label="required">*</abbr></label>
+                                    <label for="sleep">Tipus d’allotjament <abbr
+                                            title="Camp obligatori">*</abbr></label>
                                     <select id="sleep" name="sleep" required>
                                         <option value="">Tria una opció</option>
                                         <option value="Hotel">Hotel</option>
                                         <option value="Hostal">Hostal</option>
                                         <option value="Apartament de vacances">Apartament de vacances</option>
                                         <option value="Alberg">Alberg</option>
-                                        <option value="Sense preferència específica">Sense preferència específica</option>
+                                        <option value="Sense preferència específica">Sense preferència específica
+                                        </option>
                                     </select>
-                                </li>   
+                                </li>
                                 <li>
-                                    <label for="transport">Tipus de transport a destinació <abbr title="required" aria-label="required">*</abbr></label>
+                                    <label for="transport">Tipus de transport a destinació <abbr
+                                            title="Camp obligatori">*</abbr></label>
                                     <select id="transport" name="transport" required>
                                         <option value="">Tria una opció</option>
                                         <option value="Transport públic">Transport públic</option>
@@ -103,54 +113,67 @@
 
                     <section>
                         <fieldset class="type-payment">
-                            <legend>Mètode de pagament <abbr title="required" aria-label="required">*</abbr></legend>
+                            <legend><h3>Mètode de pagament <abbr title="Camp obligatori">*</abbr></h3></legend>
                             <ul>
-                               <li>
-                                    <input required type="radio" id="paypal" name="payment" value="paypal" class="other-input"/><label for="paypal">Paypal</label>
-                               </li>
                                 <li>
-                                    <input  required type="radio" id="creditCard" name="payment" value="Targeta de crèdit" class="other-input"/><label for="creditCard">Targeta de crèdit</label>
+                                    <input required type="radio" id="paypal" name="payment" value="paypal"
+                                        class="other-input"><label for="paypal">Paypal</label>
                                 </li>
                                 <li>
-                                    <input required type="radio" id="transferBanc" name="payment" value="Transferència bancària" class="other-input"/><label for="transferBanc">Transferència bancària</label>
-                                </li>  
-                            </ul> 
+                                    <input required type="radio" id="creditCard" name="payment"
+                                        value="Targeta de crèdit" class="other-input"><label for="creditCard">Targeta de
+                                        crèdit</label>
+                                </li>
+                                <li>
+                                    <input required type="radio" id="transferBanc" name="payment"
+                                        value="Transferència bancària" class="other-input"><label
+                                        for="transferBanc">Transferència bancària</label>
+                                </li>
+                            </ul>
                         </fieldset>
                     </section>
 
                     <section>
                         <fieldset class="other-info">
-                            <legend>Altres informacions</legend>
+                            <legend><h3>Altres informacions</h3></legend>
                             <ul>
                                 <li>
                                     <label for="observations">Comentaris o peticions especials</label>
                                     <textarea id="observations" name="observations" rows="9" cols="99"></textarea>
                                 </li>
-                            </ul> 
+                            </ul>
                         </fieldset>
                     </section>
 
-                    <section>
+                    <div>
                         <fieldset>
                             <ul>
                                 <li>
-                                    <p>INFORMACIÓ SOBRE PROTECCIÓ DE DADES DE <strong>RUTA PERFECTA</strong>. <strong>Finalitats</strong>: 
-                                        recollida de dades per a la sol·licitud d’informació. <strong>Legitimació</strong>: consentiment de 
-                                        l’interessat. <strong>Destinataris</strong>: no estan previstes cessions de dades a tercers, excepte per 
-                                        obligació legal. <strong>Drets</strong>: podeu retirar el vostre consentiment en qualsevol moment, així 
-                                        com accedir, rectificar, suprimir les vostres dades i altres drets dirigint-vos a 
-                                        <a href="">info@rutaperfecta.com</a>. <strong>Informació addicional</strong>: podeu ampliar la informació a l'enllaç 
+                                    <p>INFORMACIÓ SOBRE PROTECCIÓ DE DADES DE <strong>RUTA PERFECTA</strong>.
+                                        <strong>Finalitats</strong>:
+                                        recollida de dades per a la sol·licitud d’informació.
+                                        <strong>Legitimació</strong>: consentiment de
+                                        l’interessat. <strong>Destinataris</strong>: no estan previstes cessions de
+                                        dades a tercers, excepte per
+                                        obligació legal. <strong>Drets</strong>: podeu retirar el vostre consentiment en
+                                        qualsevol moment, així
+                                        com accedir, rectificar, suprimir les vostres dades i altres drets dirigint-vos
+                                        a
+                                        <a href="">info@rutaperfecta.com</a>. <strong>Informació addicional</strong>:
+                                        podeu ampliar la informació a l'enllaç
                                         d'<a href="">Avís Legal</a> i <a href="">Política de privacitat</a>.
-                                        </p>
+                                    </p>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="reamde" name="readme" value="" class="other-input" required/>
-                                    <label for="readme">He llegit i accepto la <a href="">política de privacitat</a> <abbr title="required" aria-label="required">*</abbr></label>
+                                    <input type="checkbox" id="readme" name="readme" value="" class="other-input"
+                                        required>
+                                    <label for="readme">He llegit i accepto la <a href="">política de privacitat</a>
+                                        <abbr title="Camp obligatori">*</abbr></label>
                                 </li>
                                 <li><button type="submit" class="other-input">ENVIA</button></li>
-                            </ul> 
+                            </ul>
                         </fieldset>
-                    </section>
+                    </div>
 
                 </form>
             </article>
