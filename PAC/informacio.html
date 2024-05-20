@@ -42,15 +42,15 @@
                             <ul>
                                 <li>
                                     <label for="name">Nom <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="text" id="name" name="name"/>
+                                    <input type="text" id="name" name="name" required minlength="3" maxlength="64" pattern="^[\p{L}\s]{3,64}$" title="Introdueix un nom valid."/>
                                 </li>
                                 <li>
                                     <label for="surname">Cognoms <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="text" id="surname" name="surname"/>
+                                    <input type="text" id="surname" name="surname" required minlength="3" maxlength="128" pattern="^[\p{L}\s]{3,128}$"/>
                                 </li>
                                 <li>
                                     <label for="email">Correu electrònic <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="email" id="email" name="email"/>
+                                    <input type="email" id="email" name="email" required/>
                                 </li>
                                 <li>
                                     <label for="phone">Telèfon</label>
@@ -66,7 +66,7 @@
                             <ul>
                                 <li>
                                     <label for="destination">Destinació desitjada <abbr title="required" aria-label="required">*</abbr></label>
-                                    <select id="destination" name="destination">
+                                    <select id="destination" name="destination" required>
                                         <option value="">Tria una opció</option>
                                         <option value="Aventura a la natura">Aventura a la natura</option>
                                         <option value="Ruta del vi i la gastronomia">Ruta del vi i la gastronomia</option>
@@ -76,11 +76,11 @@
                                 </li>
                                 <li>
                                     <label for="date">Data d’inici del viatge <abbr title="required" aria-label="required">*</abbr></label>
-                                    <input type="date" id="date" name="date"/>
+                                    <input type="date" id="date" name="date" required/>
                                 </li>
                                 <li>
                                     <label for="sleep">Tipus d’allotjament <abbr title="required" aria-label="required">*</abbr></label>
-                                    <select id="sleep" name="sleep">
+                                    <select id="sleep" name="sleep" required>
                                         <option value="">Tria una opció</option>
                                         <option value="Hotel">Hotel</option>
                                         <option value="Hostal">Hostal</option>
@@ -91,7 +91,7 @@
                                 </li>   
                                 <li>
                                     <label for="transport">Tipus de transport a destinació <abbr title="required" aria-label="required">*</abbr></label>
-                                    <select id="transport" name="transport">
+                                    <select id="transport" name="transport" required>
                                         <option value="">Tria una opció</option>
                                         <option value="Transport públic">Transport públic</option>
                                         <option value="Lloguer de cotxe">Lloguer de cotxe</option>
@@ -106,13 +106,13 @@
                             <legend>Mètode de pagament <abbr title="required" aria-label="required">*</abbr></legend>
                             <ul>
                                <li>
-                                    <input type="radio" id="paypal" name="payment" value="paypal" class="other-input"/><label for="paypal">Paypal</label>
+                                    <input required type="radio" id="paypal" name="payment" value="paypal" class="other-input"/><label for="paypal">Paypal</label>
                                </li>
                                 <li>
-                                    <input type="radio" id="creditCard" name="payment" value="Targeta de crèdit" class="other-input"/><label for="creditCard">Targeta de crèdit</label>
-                                </p>
+                                    <input  required type="radio" id="creditCard" name="payment" value="Targeta de crèdit" class="other-input"/><label for="creditCard">Targeta de crèdit</label>
+                                </li>
                                 <li>
-                                    <input type="radio" id="transferBanc" name="payment" value="Transferència bancària" class="other-input"/><label for="transferBanc">Transferència bancària</label>
+                                    <input required type="radio" id="transferBanc" name="payment" value="Transferència bancària" class="other-input"/><label for="transferBanc">Transferència bancària</label>
                                 </li>  
                             </ul> 
                         </fieldset>
@@ -144,7 +144,7 @@
                                         </p>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="reamde" name="readme" value="" class="other-input"/>
+                                    <input type="checkbox" id="reamde" name="readme" value="" class="other-input" required/>
                                     <label for="readme">He llegit i accepto la <a href="">política de privacitat</a> <abbr title="required" aria-label="required">*</abbr></label>
                                 </li>
                                 <li><button type="submit" class="other-input">ENVIA</button></li>

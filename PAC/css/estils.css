@@ -523,3 +523,33 @@ button {
     padding: 1.5rem 2.5rem;
     margin-top: 1rem;
 }
+
+button:hover {
+    background-color: var(--footer-color);
+    color: var(--input-background);
+    cursor: pointer;
+}
+
+/* input[type="text"]:user-invalid,
+input[type="email"]:user-invalid,
+input[type="date"]:user-invalid, */
+input[required]:user-invalid,
+select[required]:user-invalid {
+    border: 1px solid var(--required);
+}
+
+input[required]:user-valid,
+select[required]:user-valid {
+    border: 1px solid var(--input-valid);
+}
+
+form input[type="radio"]:user-invalid,
+form input[type="checkbox"]:user-invalid {
+    box-shadow: 0 0 0 1px var(--required);
+}
+
+
+form input[type="radio"]:checked:user-valid,
+form input[type="checkbox"]:checked:user-valid {
+    box-shadow: 0 0 0 1px var(--input-valid);
+}
